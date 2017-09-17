@@ -1,0 +1,5 @@
+﻿{
+    "connectionString": "mongodb://mahesh:Mahesh1990@ds143231.mlab.com:43231/paperfly",
+    "apiUrl": "http://localhost:3000/api",
+    "secret": "Mahesh Patil"
+}
