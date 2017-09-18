@@ -1,0 +1,42 @@
+Title : To authenticate the user.
+URL : /register
+Method : POST 
+Data Params : { firstname:"", lastname:"",username:"",password:""}
+Response Codes: Success (200 OK) new user registered successfully
+failed (400)
+
+Title : To authenticate the user.
+URL : /authenticate
+Method : POST 
+Data Params : { username:"",password:""}
+Response Codes: Success (200 OK) return the token
+Authentication Failure (401)
+
+Title : To get current user details
+URL : /current
+Method : GET 
+Data Params : 
+[header:{"token":somevalue}}, userid:"someid"}
+Response Codes: Success (200 OK) return the details of the user
+Authentication Failure (401)
+
+Title : To authenticate the user.
+URL : /:id
+Method : PUT
+Data Params : [header:{"token":somevalue}}, username:" ",firstname:"",lastname:"",password:""}
+Response Codes: Success (200 OK) for successful update
+Authentication Failure (401)
+
+Title : To authenticate the user.
+URL : /:id
+Method : DELETE
+Data Params : [header:{"token":somevalue}}, userid:" someuserid" }
+Response Codes: Success (200 OK) for successful delete
+Authentication Failure (401)
+
+
+
+
+
+
+
